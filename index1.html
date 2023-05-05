@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beautiful Animations</title>
+    <style>
+        body {
+            margin: 0;
+            text-align: center; 
+        }
+        .container{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, #2BC0E4 10%, #EAECC6 90%);
+        }
+        .cloud {
+            width: 200px;
+            height: 60px;
+            background-color: #fff;
+            border-radius: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: cloud 10s linear infinite;
+        }
+        .cloud:nth-child(2) {
+            width: 300px;
+            height: 80px;
+            left: 200px;
+            animation-delay: 5s;
+        }
+        .cloud:nth-child(3) {
+            width: 100px;
+            height: 40px;
+            left: 400px;
+            animation-delay: 2s;
+        }
+        .sun {
+            width: 80px;
+            height: 80px;
+            background-color: #FECE00;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: sun 10s linear infinite;
+        }
+
+        @keyframes cloud {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+        @keyframes sun {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="sun"></div>
+    </div>
+</body>
+</html>
