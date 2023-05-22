@@ -1,0 +1,13 @@
+{
+  "workbench.colorCustomizations": {
+    "minimap.background": "#00000000",
+    "scrollbar.shadow": "#00000000"
+  },
+  "editor.fontSize": 16,
+  "files.autoSave": "afterDelay",
+  "editor.cursorStyle": "block",
+  "editor.wordWrap": "on",
+  "editor.minimap.autohide": true,
+  "css.format.spaceAroundSelectorSeparator": true,
+  "interactiveSession.editor.wordWrap": "on"
+}

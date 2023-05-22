@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>red box animation</title>
+    <script type="text/javascript">
+      var pos = 0;
+      var direction = 1;
+      var interval;
+      function move() {
+        pos += direction;
+        document.getElementById("animation").style.left = pos + "px";
+        if (pos <= 0 || pos >= 200) {
+          direction *= -1;
+        }
+      }
+    
+      window.onload = function() {
+        interval = setInterval("move()", 10);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="animation" style="position:relative; top:50px; left:0px; width:40px; height:40px; background-color:red;">
+    </div>
+  </body>
+</html>
